@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>🌸 ヨーロッパ旅行 2026 🌸</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=M+PLUS+Rounded+1c:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --pink: #ffb7c5;
+      --pink-light: #ffeef2;
+      --pink-mid: #ffd6df;
+      --lavender: #c9b8f5;
+      --lavender-light: #f0ecff;
+      --mint: #b5e8d5;
+      --mint-light: #e8faf4;
+      --yellow: #ffe8a1;
+      --yellow-light: #fffbeb;
+      --peach: #ffd3b0;
+      --peach-light: #fff4ec;
+      --sky: #b3dff7;
+      --sky-light: #eef7ff;
+      --blue: #8ac4f0;
+      --text-dark: #4a3f5c;
+      --text-mid: #7a6d8a;
+      --shadow: 0 4px 20px rgba(180, 150, 200, 0.2);
+      --shadow-hover: 0 8px 30px rgba(180, 150, 200, 0.35);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'M PLUS Rounded 1c', 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #fff0f5 0%, #f5efff 30%, #effaff 60%, #f0fff6 100%);
+      color: var(--text-dark);
+      min-height: 100vh;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: linear-gradient(135deg, #ff9ab5, #c49aee, #72c5f0);
+      padding: 60px 20px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='10' cy='10' r='3' fill='rgba(255,255,255,0.15)'/%3E%3Ccircle cx='50' cy='30' r='5' fill='rgba(255,255,255,0.1)'/%3E%3Ccircle cx='70' cy='60' r='2' fill='rgba(255,255,255,0.2)'/%3E%3Ccircle cx='20' cy='65' r='4' fill='rgba(255,255,255,0.12)'/%3E%3C/svg%3E");
+    }
+    .header-deco {
+      position: absolute;
+      font-size: 3rem;
+      opacity: 0.35;
+    }
+    .deco1 { top: 10px; left: 5%; }
+    .deco2 { top: 20px; right: 8%; font-size: 2.5rem; }
+    .deco3 { bottom: 20px; left: 12%; font-size: 2rem; }
+    .deco4 { bottom: 15px; right: 5%; }
+    .deco5 { top: 50%; left: 2%; transform: translateY(-50%); font-size: 2rem; }
+    .deco6 { top: 40%; right: 2%; transform: translateY(-50%); font-size: 2.2rem; }
+
+    .header-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.3);
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 50px;
+      padding: 8px 24px;
+      font-size: 0.9rem;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+    .header h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 0 3px 15px rgba(100,50,150,0.3);
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .header h1 span { display: block; font-size: 0.5em; font-weight: 700; opacity: 0.9; }
+    .header-dates {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .date-chip {
+      background: rgba(255,255,255,0.88);
+      border-radius: 30px;
+      padding: 10px 22px;
+      font-weight: 800;
+      color: var(--text-dark);
+      font-size: 1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    /* ===== WAVE ===== */
+    .wave {
+      display: block;
+      width: 100%;
+      height: 60px;
+      margin-top: -2px;
+      background: transparent;
+    }
+    .wave path { fill: #fff0f5; }
+
+    /* ===== MAIN ===== */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 16px 60px;
+    }
+
+    /* ===== SECTION TITLE ===== */
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 40px 0 20px;
+    }
+    .section-title .icon {
+      width: 48px; height: 48px;
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+    .section-title h2 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--text-dark);
+    }
+    .section-title h2 small {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-mid);
+      margin-top: 2px;
+    }
+
+    /* ===== FLIGHT CARD ===== */
+    .flight-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 600px) { .flight-section { grid-template-columns: 1fr; } }
+
+    .flight-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      border: 2px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+    .flight-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+    }
+    .flight-card.outbound::before { background: linear-gradient(90deg, #ff9ab5, #c49aee); }
+    .flight-card.return::before { background: linear-gradient(90deg, #72c5f0, #6ee8c0); }
+
+    .flight-label {
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+    .outbound .flight-label { background: var(--pink-mid); color: #c0395a; }
+    .return .flight-label { background: var(--sky); color: #2a6ea0; }
+
+    .flight-route {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 12px 0 8px;
+    }
+    .airport {
+      text-align: center;
+      flex: 1;
+    }
+    .airport-code {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--text-dark);
+    }
+    .airport-name {
+      font-size: 0.7rem;
+      color: var(--text-mid);
+      font-weight: 600;
+    }
+    .flight-arrow {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .flight-line {
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--pink), var(--lavender));
+      border-radius: 2px;
+      position: relative;
+    }
+    .flight-line::after {
+      content: '✈️';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      font-size: 1rem;
+    }
+    .flight-num {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--text-mid);
+      margin-top: 4px;
+    }
+    .flight-times {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .flight-time-box { text-align: center; }
+    .time { font-size: 1.3rem; font-weight: 900; color: var(--text-dark); }
+    .time-date { font-size: 0.68rem; color: var(--text-mid); font-weight: 600; }
+
+    /* Connecting flight */
+    .connecting-note {
+      background: var(--yellow-light);
+      border: 1.5px dashed var(--yellow);
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin-top: 10px;
+      font-size: 0.78rem;
+      color: #7a6200;
+      font-weight: 600;
+    }
+
+    /* ===== TIMELINE ===== */
+    .timeline {
+      position: relative;
+      padding-left: 20px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 28px;
+      top: 0; bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, #ff9ab5, #c49aee, #72c5f0, #6ee8c0, #ffcd7a, #ff9ab5);
+      border-radius: 3px;
+      opacity: 0.5;
+    }
+
+    /* ===== DAY CARD ===== */
+    .day-card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 0;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+      margin-left: 36px;
+    }
+    .day-card:hover { box-shadow: var(--shadow-hover); }
+
+    .day-dot {
+      position: absolute;
+      left: -52px;
+      top: 22px;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+      border: 3px solid #fff;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      z-index: 1;
+    }
+
+    .day-header {
+      padding: 16px 20px 14px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .day-date-area { display: flex; align-items: center; gap: 14px; }
+    .day-number {
+      width: 50px; height: 50px;
+      border-radius: 16px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .day-number .num { font-size: 1.5rem; line-height: 1; }
+    .day-number .label { font-size: 0.55rem; font-weight: 700; opacity: 0.85; }
+
+    .day-title-area h3 {
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: var(--text-dark);
+      line-height: 1.3;
+    }
+    .day-title-area .day-sub {
+      font-size: 0.75rem;
+      color: var(--text-mid);
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .location-badge {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .day-body { padding: 0 20px 20px; }
+
+    /* ===== ACTIVITY LIST ===== */
+    .activity-list { list-style: none; }
+    .activity-item {
+      display: flex;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px dashed rgba(180,160,200,0.25);
+      align-items: flex-start;
+    }
+    .activity-item:last-child { border-bottom: none; }
+    .activity-icon {
+      width: 34px; height: 34px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .activity-content { flex: 1; }
+    .activity-time {
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: var(--text-mid);
+      margin-bottom: 2px;
+    }
+    .activity-name {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      line-height: 1.35;
+    }
+    .activity-desc {
+      font-size: 0.78rem;
+      color: var(--text-mid);
+      margin-top: 3px;
+      line-height: 1.5;
+    }
+
+    /* Tips/Note */
+    .tip-box {
+      margin-top: 12px;
+      padding: 10px 14px;
+      border-radius: 14px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      line-height: 1.6;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .tip-box .tip-icon { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+    .tip-pink { background: var(--pink-light); color: #a0315a; border-left: 3px solid var(--pink); }
+    .tip-lavender { background: var(--lavender-light); color: #5a3a9a; border-left: 3px solid var(--lavender); }
+    .tip-mint { background: var(--mint-light); color: #1a7a55; border-left: 3px solid var(--mint); }
+    .tip-yellow { background: var(--yellow-light); color: #7a5a00; border-left: 3px solid var(--yellow); }
+    .tip-sky { background: var(--sky-light); color: #1a5a8a; border-left: 3px solid var(--sky); }
+    .tip-peach { background: var(--peach-light); color: #8a4a1a; border-left: 3px solid var(--peach); }
+
+    /* Hotel tag */
+    .hotel-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #fff0f8, #f5edff);
+      border: 1.5px solid var(--pink-mid);
+      border-radius: 12px;
+      padding: 8px 14px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-top: 14px;
+      width: 100%;
+    }
+    .hotel-tag .stars { color: #ffaa00; letter-spacing: 1px; }
+
+    /* Divider */
+    .section-divider {
+      border: none;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--pink-mid), var(--lavender), var(--mint), transparent);
+      border-radius: 2px;
+      margin: 10px 0 16px;
+      opacity: 0.6;
+    }
+
+    /* Color themes per day */
+    .theme-pink .day-number { background: var(--pink-mid); color: #c0395a; }
+    .theme-pink .day-dot { background: var(--pink); }
+    .theme-pink .day-header { background: var(--pink-light); border-bottom: 2px solid var(--pink-mid); }
+    .theme-pink .location-badge { background: var(--pink-mid); color: #c0395a; }
+    .theme-pink .activity-icon { background: var(--pink-light); }
+
+    .theme-lavender .day-number { background: var(--lavender); color: #5a3a9a; }
+    .theme-lavender .day-dot { background: var(--lavender); }
+    .theme-lavender .day-header { background: var(--lavender-light); border-bottom: 2px solid var(--lavender); }
+    .theme-lavender .location-badge { background: var(--lavender); color: #5a3a9a; }
+    .theme-lavender .activity-icon { background: var(--lavender-light); }
+
+    .theme-sky .day-number { background: var(--sky); color: #1a5a8a; }
+    .theme-sky .day-dot { background: var(--sky); }
+    .theme-sky .day-header { background: var(--sky-light); border-bottom: 2px solid var(--sky); }
+    .theme-sky .location-badge { background: var(--sky); color: #1a5a8a; }
+    .theme-sky .activity-icon { background: var(--sky-light); }
+
+    .theme-mint .day-number { background: var(--mint); color: #1a7a55; }
+    .theme-mint .day-dot { background: var(--mint); }
+    .theme-mint .day-header { background: var(--mint-light); border-bottom: 2px solid var(--mint); }
+    .theme-mint .location-badge { background: var(--mint); color: #1a7a55; }
+    .theme-mint .activity-icon { background: var(--mint-light); }
+
+    .theme-yellow .day-number { background: var(--yellow); color: #7a5a00; }
+    .theme-yellow .day-dot { background: var(--yellow); }
+    .theme-yellow .day-header { background: var(--yellow-light); border-bottom: 2px solid var(--yellow); }
+    .theme-yellow .location-badge { background: var(--yellow); color: #7a5a00; }
+    .theme-yellow .activity-icon { background: var(--yellow-light); }
+
+    .theme-peach .day-number { background: var(--peach); color: #8a4a1a; }
+    .theme-peach .day-dot { background: var(--peach); }
+    .theme-peach .day-header { background: var(--peach-light); border-bottom: 2px solid var(--peach); }
+    .theme-peach .location-badge { background: var(--peach); color: #8a4a1a; }
+    .theme-peach .activity-icon { background: var(--peach-light); }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      font-weight: 700;
+    }
+    .footer .footer-emoji { font-size: 1.5rem; margin: 0 4px; }
+
+    /* ===== Summary strip ===== */
+    .summary-strip {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 16px 0;
+    }
+    .summary-chip {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: #fff;
+      border-radius: 16px;
+      padding: 10px 16px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      box-shadow: var(--shadow);
+      color: var(--text-dark);
+    }
+    .summary-chip .chip-icon { font-size: 1.2rem; }
+
+    /* Highlight badge for special events */
+    .highlight-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff9ab5, #c49aee);
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 2px 9px;
+      border-radius: 20px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    /* Undecided tag */
+    .undecided-badge {
+      display: inline-block;
+      background: var(--yellow-light);
+      color: #7a5a00;
+      border: 1.5px dashed #e8c840;
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 2px 9px;
+      border-radius: 20px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    /* ===== DAY PHOTO BANNER ===== */
+    .day-photo {
+      overflow: hidden;
+      border-radius: 0;
+      margin: 0;
+      position: relative;
+    }
+    .day-photo img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .day-card:hover .day-photo img {
+      transform: scale(1.03);
+    }
+    /* 印刷時は写真高さを抑える */
+    @media print {
+      .day-photo img { height: 130px !important; }
+    }
+
+
+
+    /* ===== SUMMARY TABLE ===== */
+    .sum-row {
+      display: grid;
+      grid-template-columns: 72px 1fr 1fr 1fr;
+      padding: 9px 16px;
+      gap: 8px;
+      border-bottom: 1px solid #f0eaf8;
+      font-size: 0.78rem;
+      align-items: start;
+      transition: background 0.15s;
+    }
+    .sum-row:hover { background: var(--lavender-light); }
+    .sum-row[data-color="pink"]    { border-left: 3px solid var(--pink); }
+    .sum-row[data-color="lavender"]{ border-left: 3px solid var(--lavender); }
+    .sum-row[data-color="sky"]     { border-left: 3px solid var(--sky); }
+    .sum-row[data-color="mint"]    { border-left: 3px solid var(--mint); }
+    .sum-row[data-color="yellow"]  { border-left: 3px solid var(--yellow); }
+    .sum-row[data-color="peach"]   { border-left: 3px solid var(--peach); }
+    .sum-date {
+      font-weight: 900;
+      font-size: 1rem;
+      color: var(--text-dark);
+      line-height: 1.2;
+      display: flex;
+      flex-direction: column;
+    }
+    .sum-date span { font-size: 0.65rem; color: var(--text-mid); font-weight: 600; }
+    .sum-date .sum-day {
+      font-size: 0.6rem;
+      background: var(--lavender-light);
+      color: var(--text-mid);
+      border-radius: 6px;
+      padding: 1px 4px;
+      margin-top: 2px;
+      display: inline-block;
+    }
+    .sum-move, .sum-spot, .sum-hotel {
+      line-height: 1.55;
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+    .sum-flight {
+      font-size: 0.68rem;
+      background: var(--sky-light);
+      color: #1a5a8a;
+      border-radius: 6px;
+      padding: 1px 5px;
+      font-weight: 700;
+    }
+    .sum-undecided {
+      font-size: 0.67rem;
+      background: var(--yellow-light);
+      color: #7a5a00;
+      border-radius: 6px;
+      padding: 1px 5px;
+      font-weight: 700;
+    }
+    .sum-hotel { font-size: 0.72rem; color: var(--text-mid); }
+    @media (max-width: 600px) {
+      .sum-row { grid-template-columns: 56px 1fr; }
+      .sum-spot, .sum-hotel { grid-column: 2; }
+    }
+    @media print {
+      .sum-row { font-size: 0.65rem; padding: 5px 10px; }
+      .sum-date { font-size: 0.85rem; }
+      .summary-table { break-inside: avoid; }
+    }
+
+    /* ===== PHOTO GALLERY STRIP ===== */
+    .photo-strip {
+      display: flex;
+      gap: 6px;
+      padding: 10px 16px 12px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .photo-strip::-webkit-scrollbar { display: none; }
+    .photo-item {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+    }
+    .photo-item img {
+      width: 120px;
+      height: 82px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      display: block;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .photo-item img:hover {
+      transform: scale(1.06);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    }
+    .photo-caption {
+      font-size: 0.58rem;
+      color: var(--text-mid);
+      font-weight: 700;
+      text-align: center;
+      max-width: 120px;
+      line-height: 1.2;
+    }
+    @media print {
+      .photo-strip {
+        flex-wrap: wrap;
+        overflow: visible;
+        padding: 6px 10px 8px;
+        gap: 4px;
+      }
+      .photo-item img {
+        width: 90px;
+        height: 62px;
+        box-shadow: none;
+        border: 1px solid #ddd;
+      }
+    }
+
+    /* ===== PRINT STYLES ===== */
+    @media print {
+      /* ---- 用紙設定: A4縦 ---- */
+      @page {
+        size: A4 portrait;
+        margin: 12mm 10mm 14mm 10mm;
+      }
+      @page :first {
+        margin-top: 0;
+      }
+
+      /* ---- 基本リセット ---- */
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
+
+      html, body {
+        width: 100%;
+        background: #ffffff !important;
+        font-size: 9.5pt;
+      }
+
+      /* ---- ヘッダー: 1ページ目を圧縮 ---- */
+      .header {
+        padding: 20px 16px 28px !important;
+        break-after: avoid;
+      }
+      .header h1 {
+        font-size: 1.6rem !important;
+      }
+      .header-deco { display: none; }
+      .wave { display: none; }
+
+      /* ---- コンテナ ---- */
+      .container {
+        max-width: 100% !important;
+        padding: 10px 6px !important;
+      }
+
+      /* ---- サマリーストリップ ---- */
+      .summary-strip {
+        break-inside: avoid;
+        margin-bottom: 10px !important;
+      }
+
+      /* ---- 旅程マップ: 途切れない ---- */
+      .section-title {
+        break-inside: avoid;
+        break-after: avoid;
+        margin-top: 16px !important;
+      }
+
+      /* ---- フライトカード ---- */
+      .flight-section {
+        break-inside: avoid;
+      }
+      .flight-card {
+        break-inside: avoid;
+        box-shadow: none !important;
+        border: 1.5px solid #ddd !important;
+        margin-bottom: 8px !important;
+      }
+
+      /* ---- タイムライン ---- */
+      .timeline::before {
+        background: #ccc !important;
+      }
+
+      /* ---- 日程カード: 途中で切れない ---- */
+      .day-card {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        box-shadow: none !important;
+        border: 1.5px solid #e0d8f0 !important;
+        margin-bottom: 12px !important;
+        margin-left: 28px !important;
+      }
+      .day-dot {
+        width: 26px !important;
+        height: 26px !important;
+        font-size: 0.75rem !important;
+        left: -42px !important;
+      }
+
+      /* ---- アクティビティ ---- */
+      .activity-item {
+        break-inside: avoid;
+        padding: 6px 0 !important;
+      }
+
+      /* ---- チップ・バッジ ---- */
+      .tip-box {
+        break-inside: avoid;
+      }
+      .hotel-tag {
+        break-inside: avoid;
+      }
+
+      /* ---- チェックリスト ---- */
+      .checklist-section {
+        break-inside: avoid;
+      }
+
+      /* ---- フッター ---- */
+      .footer {
+        break-inside: avoid;
+        padding: 16px !important;
+        margin-top: 16px !important;
+      }
+
+      /* ---- ホバー効果を無効化 ---- */
+      .day-card:hover {
+        box-shadow: none !important;
+        transform: none !important;
+      }
+
+      /* ---- リンク非表示 ---- */
+      a[href]::after { content: none !important; }
+    }
+
+    @media (max-width: 500px) {
+      .timeline { padding-left: 10px; }
+      .day-card { margin-left: 30px; }
+      .day-dot { left: -46px; width: 28px; height: 28px; }
+      .timeline::before { left: 22px; }
+    }
+  </style>
+</head>
+<body>
+<!-- ===== HEADER ===== -->
+<div class="header">
+<span class="header-deco deco1">🌸</span>
+<span class="header-deco deco2">✈️</span>
+<span class="header-deco deco3">🧸</span>
+<span class="header-deco deco4">🏰</span>
+<span class="header-deco deco5">🌷</span>
+<span class="header-deco deco6">⭐</span>
+<div class="header-badge">✨ TRAVEL ITINERARY 2026 ✨</div>
+<h1>
+    🌸 ヨーロッパ旅行 🌸
+    <span>Germany &amp; France · Spring 2026</span>
+</h1>
+<div class="header-dates">
+<div class="date-chip">🇯🇵 3月25日 出発</div>
+<div class="date-chip">🗓️ 9泊10日</div>
+<div class="date-chip">🇩🇪🇫🇷 4月3日 帰国</div>
+</div>
+</div>
+<svg class="wave" preserveaspectratio="none" viewbox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,0 C360,60 1080,0 1440,40 L1440,60 L0,60 Z"></path>
+</svg>
+<!-- ===== CONTAINER ===== -->
+<div class="container">
+<!-- Summary -->
+<div class="summary-strip">
+<div class="summary-chip"><span class="chip-icon">✈️</span> 2フライト利用</div>
+<div class="summary-chip"><span class="chip-icon">🏨</span> 5ホテル</div>
+<div class="summary-chip"><span class="chip-icon">📍</span> 6都市</div>
+<div class="summary-chip"><span class="chip-icon">🧸</span> シュタイフ聖地</div>
+<div class="summary-chip"><span class="chip-icon">🏰</span> ノイシュヴァンシュタイン</div>
+</div>
+<!-- ===== ITINERARY SUMMARY ===== -->
+<div class="section-title" style="margin-top:36px;">
+<div class="icon" style="background:var(--lavender);">🗓️</div>
+<h2>日程サマリー <small>Itinerary at a Glance</small></h2>
+</div>
+<div class="summary-table" style="
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    margin-bottom:40px;
+    border:1.5px solid var(--lavender);
+  ">
+<!-- ヘッダー -->
+<div style="
+      display:grid;
+      grid-template-columns: 72px 1fr 1fr 1fr;
+      background:linear-gradient(90deg,var(--lavender),var(--sky));
+      padding:10px 16px;
+      font-size:0.72rem;
+      font-weight:900;
+      color:#fff;
+      letter-spacing:1px;
+      gap:8px;
+    ">
+<div>日付</div>
+<div>移動・ルート</div>
+<div>観光・アクティビティ</div>
+<div>宿泊</div>
+</div>
+<!-- 各行 -->
+<div class="sum-row" data-color="pink">
+<div class="sum-date">3/25<span>水</span><span class="sum-day">Day 0</span></div>
+<div class="sum-move">🚃 自宅→羽田空港<br/><span class="sum-flight">NH217 23:30発→MUC</span></div>
+<div class="sum-spot">✈️ 搭乗・機内泊</div>
+<div class="sum-hotel">— 機内泊</div>
+</div>
+<div class="sum-row" data-color="lavender">
+<div class="sum-date">3/26<span>木</span><span class="sum-day">Day 1</span></div>
+<div class="sum-move">✈️ MUC着 6:25<br/>🚌 空港→フュッセン</div>
+<div class="sum-spot">🏰 ノイシュヴァンシュタイン城周辺散策</div>
+<div class="sum-hotel">🏨 Hotel Sonne Füssen</div>
+</div>
+<div class="sum-row" data-color="pink">
+<div class="sum-date">3/27<span>金</span><span class="sum-day">Day 2</span></div>
+<div class="sum-move">🚆 フュッセン→ミュンヘン</div>
+<div class="sum-spot">🏰 ノイシュヴァンシュタイン城内部見学<br/>🏛️ マリエン広場・フラウエン教会</div>
+<div class="sum-hotel">🏨 Hilton Munich City</div>
+</div>
+<div class="sum-row" data-color="sky">
+<div class="sum-date">3/28<span>土</span><span class="sum-day">Day 3</span></div>
+<div class="sum-move">— ミュンヘン市内</div>
+<div class="sum-spot">🕍 ダッハウ記念館<br/>🍺 ホフブロイハウス・ビアガーデン</div>
+<div class="sum-hotel">🏨 Hilton Munich City</div>
+</div>
+<div class="sum-row" data-color="mint">
+<div class="sum-date">3/29<span>日</span><span class="sum-day">Day 4</span></div>
+<div class="sum-move">🚆 ミュンヘン→ギンゲン→ウルム</div>
+<div class="sum-spot">🧸 シュタイフ本店<br/>⛪ ウルム大聖堂（世界一の塔）</div>
+<div class="sum-hotel">🏨 Me and All Hotel Ulm</div>
+</div>
+<div class="sum-row" data-color="yellow">
+<div class="sum-date">3/30<span>月</span><span class="sum-day">Day 5</span></div>
+<div class="sum-move">🚆 ウルム→ケール→ストラスブール</div>
+<div class="sum-spot">🥐 プティット・フランス・旧市街散策</div>
+<div class="sum-hotel">🏨 Citadines Kleber Strasbourg</div>
+</div>
+<div class="sum-row" data-color="peach">
+<div class="sum-date">3/31<span>火</span><span class="sum-day">Day 6</span></div>
+<div class="sum-move">— ストラスブール終日</div>
+<div class="sum-spot">🏛️ ノートルダム大聖堂<br/>🇪🇺 欧州議会・旧市街ショッピング</div>
+<div class="sum-hotel">🏨 Citadines Kleber Strasbourg</div>
+</div>
+<div class="sum-row" data-color="mint">
+<div class="sum-date">4/1<span>水</span><span class="sum-day">Day 7</span></div>
+<div class="sum-move">🚆 ストラスブール→ライン川沿い北上<br/><span class="sum-undecided">寄り道：マインツ／マンハイム／ビンゲン 検討中</span></div>
+<div class="sum-spot">🌊 ライン川クルーズ <span class="sum-undecided">検討中</span><br/>🏯 古城めぐり</div>
+<div class="sum-hotel">🏨 Burghotel auf Schönburg</div>
+</div>
+<div class="sum-row" data-color="lavender">
+<div class="sum-date">4/2<span>木</span><span class="sum-day">Day 8</span></div>
+<div class="sum-move">🚆 オーバーヴェーゼル→FRA<br/><span class="sum-flight">OZ542 19:40発→ICN</span></div>
+<div class="sum-spot">✈️ フランクフルト空港・免税手続き</div>
+<div class="sum-hotel">— 機内泊</div>
+</div>
+<div class="sum-row" data-color="pink" style="border-bottom:none;">
+<div class="sum-date">4/3<span>金</span><span class="sum-day">Day 9</span></div>
+<div class="sum-move">✈️ ICN着 14:35→金浦→羽田</div>
+<div class="sum-spot">🏠 帰国！おかえりなさい</div>
+<div class="sum-hotel">— 自宅へ</div>
+</div>
+</div>
+<!-- ===== ROUTE MAP ===== -->
+<div class="section-title" style="margin-top:40px;">
+<div class="icon" style="background:var(--sky);">🗺️</div>
+<h2>旅程マップ <small>Route Map</small></h2>
+</div>
+<div style="
+    background: var(--sky-light);
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
+    border: 2px solid var(--sky);
+    text-align: center;
+  ">
+<img alt="ヨーロッパ旅程マップ：ミュンヘン→フュッセン→ミュンヘン市内→ウルム→ストラスブール→オーバーヴェーゼル→フランクフルト" src="europe_map.jpg" style="
+        width: 100%;
+        max-width: 900px;
+        border-radius: 16px;
+        box-shadow: 0 6px 24px rgba(100, 160, 220, 0.25);
+        display: block;
+        margin: 0 auto;
+      "/>
+<p style="
+      margin-top: 14px;
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+    ">✈️ ミュンヘン入り → フュッセン → ミュンヘン → ウルム → ストラスブール → オーバーヴェーゼル → フランクフルト発 ✈️</p>
+</div>
+<!-- ===== FLIGHTS ===== -->
+<div class="section-title">
+<div class="icon" style="background:var(--pink-mid);">✈️</div>
+<h2>フライト情報 <small>Flight Information</small></h2>
+</div>
+<div class="flight-section">
+<!-- Outbound -->
+<div class="flight-card outbound">
+<span class="flight-label">🛫 往路 OUTBOUND</span>
+<div class="flight-route">
+<div class="airport">
+<div class="airport-code">HND</div>
+<div class="airport-name">羽田空港</div>
+</div>
+<div class="flight-arrow">
+<div class="flight-line"></div>
+<div class="flight-num">NH 217</div>
+</div>
+<div class="airport">
+<div class="airport-code">MUC</div>
+<div class="airport-name">ミュンヘン空港</div>
+</div>
+</div>
+<div class="flight-times">
+<div class="flight-time-box">
+<div class="time">23:30</div>
+<div class="time-date">3月25日（水）</div>
+</div>
+<div class="flight-time-box" style="text-align:right;">
+<div class="time">6:25</div>
+<div class="time-date">3月26日（木）</div>
+</div>
+</div>
+</div>
+<!-- Return -->
+<div class="flight-card return">
+<span class="flight-label">🛬 復路 RETURN</span>
+<div class="flight-route">
+<div class="airport">
+<div class="airport-code">FRA</div>
+<div class="airport-name">フランクフルト空港</div>
+</div>
+<div class="flight-arrow">
+<div class="flight-line" style="background:linear-gradient(90deg,var(--sky),var(--mint))"></div>
+<div class="flight-num">OZ 542</div>
+</div>
+<div class="airport">
+<div class="airport-code">ICN</div>
+<div class="airport-name">仁川空港</div>
+</div>
+</div>
+<div class="flight-times">
+<div class="flight-time-box">
+<div class="time">19:40</div>
+<div class="time-date">4月2日（木）</div>
+</div>
+<div class="flight-time-box" style="text-align:right;">
+<div class="time">14:35</div>
+<div class="time-date">4月3日（金）</div>
+</div>
+</div>
+<div class="connecting-note">
+        🔗 乗り継ぎ：OZ 1065 金浦 19:50発 → 羽田 22:00着（4月3日）
+      </div>
+</div>
+</div>
+<!-- ===== ITINERARY ===== -->
+<div class="section-title" style="margin-top:50px;">
+<div class="icon" style="background:var(--lavender);">🗓️</div>
+<h2>旅程 <small>Day by Day Itinerary</small></h2>
+</div>
+<div class="timeline">
+<!-- ==================== DAY 0 ==================== -->
+<div class="day-card theme-pink">
+<div class="day-dot">🌙</div>
+<div class="day-header">
+<div class="day-date-area">
+<div class="day-number">
+<div class="num">25</div>
+<div class="label">MAR / 水</div>
+</div>
+<div class="day-title-area">
+<h3>🇯🇵 出発日！ いってきます✨</h3>
+<div class="day-sub">Day 0 — Tokyo → Haneda Airport</div>
+</div>
+</div>
+<div class="location-badge">📍 東京 · 羽田</div>
+</div>
+<div class="day-body">
+<ul class="activity-list">
+<li class="activity-item">
+<div class="activity-icon">🚃</div>
+<div class="activity-content">
+<div class="activity-name">羽田空港へ移動</div>
+<div class="activity-desc">時間に余裕をもって空港へ。出発前に両替・荷物確認を忘れずに！</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">✈️</div>
+<div class="activity-content">
+<div class="activity-time">23:30</div>
+<div class="activity-name">NH217 羽田発 → ミュンヘン行き <span class="highlight-badge">ANA全日空</span></div>
+<div class="activity-desc">所要時間約14時間。機内でゆっくり映画＆睡眠を♪</div>
+</div>
+</li>
+</ul>
+<div class="tip-box tip-pink">
+<span class="tip-icon">💡</span>
+<span>機内持ち込みに<strong>スリッパ・アイマスク・ネックピロー</strong>があると快適です。到着後すぐ動けるよう、機内で少し仮眠を取っておきましょう！</span>
+</div>
+</div>
+</div>
+<!-- ==================== DAY 1 ==================== -->
+<div class="day-card theme-lavender">
+<div class="day-dot">🌅</div>
+<div class="day-header">
+<div class="day-date-area">
+<div class="day-number">
+<div class="num">26</div>
+<div class="label">MAR / 木</div>
+</div>
+<div class="day-title-area">
+<h3>🇩🇪 ミュンヘン到着 → フュッセンへ</h3>
+<div class="day-sub">Day 1 — Munich Airport → Füssen</div>
+</div>
+</div>
+<div class="location-badge">📍 München → Füssen</div>
+</div>
+<div class="day-body">
+<div class="photo-strip">
+<div class="photo-item">
+<img alt="ノイシュヴァンシュタイン城" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=GubotZ5iX2kP2pCmr%2BMZYaIN20gvOBb5QTECnKjEFxljM5rjihJNzp3joqAwGXHXmYkXi3%2BrBx0EzrrDFlgiNoSBgHDCU4ORqguSP%2BV5E%2FJN1mB5zwotZN5p4DY2Q35J7lY5&amp;u2=nP0h1QBb7S%2BVch02&amp;width=2560"/>
+<div class="photo-caption">ノイシュヴァンシュタイン城</div>
+</div>
+<div class="photo-item">
+<img alt="ホーエンシュヴァンガウ城" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=AWaox9fKxOMLFNSgEQCTDSv3%2BBCXKwvvEp7B%2FIc80ECtAqbTiq%2FnfDtQYFf9fVdntqCpF0AhvJudrH5VwABRDmYbFDrg4mHNW8VM0mlAtbIP%2FxWJxir1bm4IXWeO10hctSFmAeJ8osYM&amp;u2=uy2vaeNvei39u4VC&amp;width=2560"/>
+<div class="photo-caption">ホーエンシュヴァンガウ城</div>
+</div>
+<div class="photo-item">
+<img alt="フュッセン旧市街" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=ITTGfojbQILcOgdEj8%2F94BrD7q22Dj4kvxbrREahoHNHNaQHZubscFt%2BVIm65gykec5XOqPmGZFTQcRk9cCUM5SH5KSeq5O%2BIjWx9FRb3w%3D%3D&amp;u2=XJJRWhVoGscngwQd&amp;width=2560"/>
+<div class="photo-caption">フュッセン旧市街</div>
+</div>
+</div>
+<ul class="activity-list">
+<li class="activity-item">
+<div class="activity-icon">🛬</div>
+<div class="activity-content">
+<div class="activity-time">6:25</div>
+<div class="activity-name">ミュンヘン空港到着</div>
+<div class="activity-desc">入国審査・荷物受け取り。EU外からの入国なので余裕をもって。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🍽️</div>
+<div class="activity-content">
+<div class="activity-name">空港で朝食</div>
+<div class="activity-desc">ミュンヘン空港は早朝から多くのカフェ・レストランが開いています。バイエルン風の朝食（ブレーツェル＋ホワイトソーセージ！）もおすすめ🥨</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🚌</div>
+<div class="activity-content">
+<div class="activity-name">フュッセンへ移動</div>
+<div class="activity-desc">空港から電車またはバスで約2〜2.5時間。フュッセンはアルペンロードの終着点で絶景が広がります。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🏘️</div>
+<div class="activity-content">
+<div class="activity-name">フュッセン観光</div>
+<div class="activity-desc">
+<strong>旧市街（アルトシュタット）</strong>のカラフルな建物散策、<strong>レッヒ滝（Lechfall）</strong>、<strong>聖マング修道院</strong>、<strong>フュッセン城（ホーエス・シュロス）</strong>など。メルヘンな街並みをお散歩♪
+              </div>
+</div>
+</li>
+</ul>
+<div class="hotel-tag">
+          🏨 宿泊 <strong>Hotel Sonne Füssen</strong> <span class="stars">★★★★</span>
+<span style="font-size:0.72rem;color:var(--text-mid);margin-left:4px;">— ルートヴィヒ2世の物語をテーマにした客室が素敵♪</span>
+</div>
+</div>
+</div>
+<!-- ==================== DAY 2 ==================== -->
+<div class="day-card theme-pink">
+<div class="day-dot">🏰</div>
+<div class="day-header">
+<div class="day-date-area">
+<div class="day-number">
+<div class="num">27</div>
+<div class="label">MAR / 金</div>
+</div>
+<div class="day-title-area">
+<h3>🏰 ノイシュヴァンシュタイン城 → ミュンヘン</h3>
+<div class="day-sub">Day 2 — Neuschwanstein Castle → Munich</div>
+</div>
+</div>
+<div class="location-badge">📍 Füssen → München</div>
+</div>
+<div class="day-body">
+<div class="photo-strip">
+<div class="photo-item">
+<img alt="ノイシュヴァンシュタイン城（雪景色）" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=bl1owbMzGvq9vfEmhabEN%2BmpXEshQ8RUB%2FOfsnI12BrvlgzfjRSVnXcpUxWcaZl6yGxTfDuGe3AswLWJQ2NRMqjspNxxxbgskKGXBQiw9IqE9w%3D%3D&amp;u2=jZNc1f2sYV%2Bxp%2BJl&amp;width=2560"/>
+<div class="photo-caption">ノイシュヴァンシュタイン城（雪景色）</div>
+</div>
+<div class="photo-item">
+<img alt="マリエン広場（夜景）" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=ahyX5zo4kd02HkD1x3Adnzrm0GSisIhoQ2xWTExvPYQKDPxYsGFxdnp0JZiwwgUKGtWERiG6mmLhW%2B9ftZL8xDfGxNrE63v7ShNq%2BDrrFNJeXbueQ61%2Blui1yxtaHO1y%2FxJYM28Ks8ERjKDlQXTQx0Hsxbvy%2BvWj7ccCFYcfDGKDGnR3XGzmQ9Noax71JD5o&amp;u2=Qri4rULrMSx%2BOQM%2B&amp;width=2560"/>
+<div class="photo-caption">マリエン広場（夜景）</div>
+</div>
+<div class="photo-item">
+<img alt="ヴィクトゥアリエンマルクト" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=Z4Ixv4ukjiRi6phQLzL6dTx60UHkyaWqPU85nyFyXTuq5p9Un5tvAwe1mGU35WdbW1CxSGCA7T%2FFUG8q9x413avmPtUgM7xIBMMZL41HBbf9%2Bpl8Aa4rjd0xC%2FHTMKHCQ2XhH3KxbELd0b%2BLce2wSFqFLPtu3Fl72AvRQw%3D%3D&amp;u2=dWByYvdeFq%2FNdWac&amp;width=2560"/>
+<div class="photo-caption">ヴィクトゥアリエンマルクト</div>
+</div>
+</div>
+<ul class="activity-list">
+<li class="activity-item">
+<div class="activity-icon">🏰</div>
+<div class="activity-content">
+<div class="activity-time">10:00〜</div>
+<div class="activity-name">ノイシュヴァンシュタイン城 ガイドツアー <span class="highlight-badge">要予約</span></div>
+<div class="activity-desc">世界一有名なおとぎ話の城！ガイドツアー（約35分）のみ入場可。ガイドツアーは英語・ドイツ語あり。入場料：大人€21。マリエン橋から絶景写真も忘れずに📸</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🦢</div>
+<div class="activity-content">
+<div class="activity-name">ホーエンシュヴァンガウ城も見学（任意）</div>
+<div class="activity-desc">ノイシュヴァンシュタイン城の麓にある「白鳥城」。ルートヴィヒ2世が幼少期を過ごした城です。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🚂</div>
+<div class="activity-content">
+<div class="activity-name">午後：ミュンヘンへ移動</div>
+<div class="activity-desc">フュッセン→ミュンヘン中央駅まで特急で約2時間。夕方にはチェックイン。</div>
+</div>
+</li><li class="activity-item">
+<div class="activity-icon">🏛️</div>
+<div class="activity-content">
+<div class="activity-time">夕方〜</div>
+<div class="activity-name">マリエン広場＆旧市街散策 <span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">ミュンヘンの中心広場・マリエン広場を散策。新市庁舎のグロッケンシュピール（からくり時計）や旧市庁舎を眺めながらひと休み。夕暮れ時はライトアップが美しい✨</div>
+</div>
+</li><li class="activity-item">
+<div class="activity-icon">🛒</div>
+<div class="activity-content">
+<div class="activity-name">ヴィクトゥアリエンマルクト（青空市場）<span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">ミュンヘン最大の青空市場。新鮮な野菜・果物・チーズ・バイエルン名物の食材がずらり。お土産探しにもぴったり🧀</div>
+</div>
+</li><li class="activity-item">
+<div class="activity-icon">🍺</div>
+<div class="activity-content">
+<div class="activity-name">ビアホールで夕食 <span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">ホフブロイハウス（Hofbräuhaus）やアウグスティナーなど老舗ビアホールでバイエルン料理の夕食。白ソーセージ・プレッツェル・マースビール（1L）で乾杯🥨</div>
+</div>
+</li>
+</ul>
+<div class="tip-box tip-lavender">
+<span class="tip-icon">🎟️</span>
+<span>ノイシュヴァンシュタイン城のチケットは<strong>事前オンライン予約が必須に近い</strong>（公式サイト：hohenschwangau.de）。当日券は非常に並びます！200段以上の急な階段があるので歩きやすい靴で。</span>
+</div><div class="tip-box tip-sky" style="margin-top:8px;">
+<span class="tip-icon">🌆</span>
+<span>ミュンヘン到着は夕方ごろの見込み。ホテルチェックイン後、徒歩圏内のマリエン広場・ヴィクトゥアリエンマルクト・ビアホールを気軽に散策できます。翌日（3/28）が終日ミュンヘン観光なので、無理せず夕食がてらの散策がおすすめ🚶</span>
+</div>
+<div class="hotel-tag">
+          🏨 宿泊 <strong>Hilton Munich City</strong> <span class="stars">★★★★★</span>
+<span style="font-size:0.72rem;color:var(--text-mid);margin-left:4px;">— ミュンヘン市内の5星ホテル</span>
+</div>
+</div>
+</div>
+<!-- ==================== DAY 3 ==================== -->
+<div class="day-card theme-sky">
+<div class="day-dot">🏛️</div>
+<div class="day-header">
+<div class="day-date-area">
+<div class="day-number">
+<div class="num">28</div>
+<div class="label">MAR / 土</div>
+</div>
+<div class="day-title-area">
+<h3>🏛️ ミュンヘン終日観光</h3>
+<div class="day-sub">Day 3 — Munich Full Day</div>
+</div>
+</div>
+<div class="location-badge">📍 München</div>
+</div>
+<div class="day-body">
+<div class="photo-strip">
+<div class="photo-item">
+<img alt="新市庁舎・マリエン広場" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=N8EjoKoKcMsgSby4tfFV3zQIdUUVhiOySdMhIMFO2RNk%2FbntLVDHsvJo8zvE2bi3o5Oyu2qokBGoPYHJfwfyFZjvAqcQMane9oRnBYgJexMb9Qn1Py3ASu%2B7farvdsOFpws%2BztrKqw%3D%3D&amp;u2=Tx5YKMzZZ57nLU9D&amp;width=2560"/>
+<div class="photo-caption">新市庁舎・マリエン広場</div>
+</div>
+<div class="photo-item">
+<img alt="フラウエン教会" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=NjiW6cFvs5s7YVW%2BFIlxoxhLQjH4zDca3SuJG1GY2oFK7YwJcJUt8FD42v%2F3TS0YuiHXB5Rp0cU%2B4%2FbMAKYN7asx0wjFDy6UBtF4dtGYegTIZ0RcsaXOApYDpsnZYnLDXApKjis8&amp;u2=a95IsrP1Cb%2FvL9iE&amp;width=2560"/>
+<div class="photo-caption">フラウエン教会</div>
+</div>
+<div class="photo-item">
+<img alt="ホフブロイハウス" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=Q6t8TET8w62lNo83OMIVMxTjVDFbB5GCSUk%2FQoMjYbO5qGxe6l6FNuLvLvU3YrA96zTencfLQfRhU156hjWoItOuZZwRqk0GdqA6%2FX9zgdmGhAVMiRg%2FbUDhyDF%2F6e6iS4SdcoBqtD7%2FzOrfeq%2FzguAk&amp;u2=X1e6i4uSH7Cae%2FB1&amp;width=2560"/>
+<div class="photo-caption">ホフブロイハウス</div>
+</div>
+</div>
+<ul class="activity-list">
+<li class="activity-item">
+<div class="activity-icon">🕍</div>
+<div class="activity-content">
+<div class="activity-time">午前</div>
+<div class="activity-name">ダッハウ強制収容所記念館</div>
+<div class="activity-desc">ミュンヘン近郊（電車で約40分）。ナチス時代の最初の強制収容所跡。歴史の重みを感じながら、平和の大切さを学ぶ場所。入場無料。所要目安：2〜3時間。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">👑</div>
+<div class="activity-content">
+<div class="activity-time">午後</div>
+<div class="activity-name">ミュンヘン・レジデンツ（王宮）</div>
+<div class="activity-desc">ドイツ最大の都市宮殿！バイエルン王家ヴィッテルスバッハ家の居城。豪華絢爛な130以上の部屋を見学。王宮博物館＋宝物殿セットがおすすめ（€14）。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🍺</div>
+<div class="activity-content">
+<div class="activity-name">夕方：マリエンプラッツ散策・ビアホール<span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">有名なホーフブロイハウスで本場のバイエルン料理とビールを♪新市庁舎のグロッケンシュピール（仕掛け時計）も見どころ。</div>
+</div>
+</li>
+</ul>
+<div class="tip-box tip-sky">
+<span class="tip-icon">💙</span>
+<span>ダッハウへはSバーン S2線で約40分（ミュンヘン中央駅から）。慰霊碑や展示室を丁寧に見ると半日かかります。心の準備をして訪問してください。</span>
+</div>
+<div class="hotel-tag">
+          🏨 宿泊 <strong>Hilton Munich City</strong> <span class="stars">★★★★★</span>
+</div>
+</div>
+</div>
+<!-- ==================== DAY 4 ==================== -->
+<div class="day-card theme-mint">
+<div class="day-dot">🧸</div>
+<div class="day-header">
+<div class="day-date-area">
+<div class="day-number">
+<div class="num">29</div>
+<div class="label">MAR / 日</div>
+</div>
+<div class="day-title-area">
+<h3>🧸 シュタイフ聖地巡礼 → ウルム</h3>
+<div class="day-sub">Day 4 — Munich → Giengen (Steiff) → Ulm</div>
+</div>
+</div>
+<div class="location-badge">📍 Giengen → Ulm</div>
+</div>
+<div class="day-body">
+<div class="photo-strip">
+<div class="photo-item">
+<img alt="ウルム大聖堂（世界一の塔）" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=rnP1NA4rzZge1RqYjmUfwbHjyDITl4Gvem30RcRQhxnUujYHNh4nFiLa0fwmoiu9CLzkuQcilsGQ1Vdjc4FFiV6EnXyH%2F9kgowqcPsvGG4hRE3q5T5x1NCzhWtLjrDTMEOJfYk7YzxZvxAMLzVYbXT47Y%2FdgnWBAubW0LP1Q3VpNM1GL0wzPhpceMOJ69L%2Bs098UztUG1%2FHM%2BuKHxSU%3D&amp;u2=FTx8keGiShvSJPsL&amp;width=2560"/>
+<div class="photo-caption">ウルム大聖堂（世界一の塔）</div>
+</div>
+<div class="photo-item">
+<img alt="フィッシャーファーテル" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=r6YAkhjRF0kGFx1Ca3darf6zWdQKby9%2Bh52s3uLff9V7%2FL9%2FKiT94O2dqi6f6FGu0UOuegSWwi3cwgjy%2FVG1WgShPfhsVbq3iECoJznoSQ8%3D&amp;u2=5rd4ztDkCfhmRPGs&amp;width=2560"/>
+<div class="photo-caption">フィッシャーファーテル</div>
+</div>
+<div class="photo-item">
+<img alt="シュタイフのテディベア🧸" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=U%2B4z2%2F61%2BZKMHVwBuMZswxNDTY1Ed15NqKvjl83iyjBgGdl%2BNnoa13P%2FQcxg%2Finhq%2FyPrjMnJ1KF1rcJx8Y5s0nXaupDeIgmhrW04XR7JNjPV7hnfjXh2S9P788ffPEX%2F4JKIpNHffpdggXqTzeugV8ZzAxbH6QE2L%2FSBRa2oBz7S7A44suank8v8Q%3D%3D&amp;u2=bBMGL8%2FFofpCj8nP&amp;width=2560"/>
+<div class="photo-caption">シュタイフのテディベア🧸</div>
+</div>
+</div>
+<ul class="activity-list">
+<li class="activity-item">
+<div class="activity-icon">🚆</div>
+<div class="activity-content">
+<div class="activity-time">早朝</div>
+<div class="activity-name">ウルムへ移動・ホテルに荷物を預ける</div>
+<div class="activity-desc">ミュンヘン→ウルム 約1時間。チェックイン前でも荷物を預けてもらえます。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🧸</div>
+<div class="activity-content">
+<div class="activity-time">午前中</div>
+<div class="activity-name">シュタイフミュージアム <span class="highlight-badge">テディベアの聖地！</span></div>
+<div class="activity-desc">
+                ウルムから電車で約30分、ギンゲン・アン・デア・ブレンツへ。<br/>
+<strong>📍 Margarete-Steiff-Platz 1, 89537 Giengen an der Brenz</strong><br/>
+                テディベア誕生の歴史を体験できる夢のような空間✨ 入場料：大人€12。
+              </div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🛍️</div>
+<div class="activity-content">
+<div class="activity-name">シュタイフ アウトレット <span class="highlight-badge">お買い物タイム</span></div>
+<div class="activity-desc">
+<strong>📍 Alleenstraße 2, 89537 Giengen an der Brenz</strong>（ミュージアムから徒歩圏内）<br/>
+                ぬいぐるみやコレクターアイテムがお得な価格で！限定品も多数。荷物が増える予覚悟で🐻
+              </div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">⛪</div>
+<div class="activity-content">
+<div class="activity-time">午後</div>
+<div class="activity-name">ウルム市内観光</div>
+<div class="activity-desc">
+<strong>ウルム大聖堂（Ulmer Münster）</strong>：世界一高い教会の塔（143m）！768段の螺旋階段を登ってアルプスを一望📸<br/>
+<strong>漁師の街（Fischerviertel）</strong>：ドナウ川沿いの中世の街並み<br/>
+<strong>傾いた家（Das Schiefe Haus）</strong>：世界一傾いた宿泊施設（外観見学）<br/>
+<strong>アインシュタインの泉</strong>：ウルム生まれの天才物理学者の記念像
+              </div>
+</div>
+</li>
+</ul>
+<div class="tip-box tip-mint">
+<span class="tip-icon">🧸</span>
+<span><strong>シュタイフミュージアムはウルム市内ではなくギンゲン市にあります！</strong>ウルム駅からBahn（電車）でKotzenauまたはGiengen行きに乗車（約30〜40分）。本数が少ない路線なので時刻表を事前に確認してください。</span>
+</div>
+<div class="hotel-tag">
+          🏨 宿泊 <strong>Me and All Hotel Ulm, by Hyatt</strong>
+<span style="font-size:0.72rem;color:var(--text-mid);margin-left:4px;">— ウルム旧市街の素敵なブティックホテル</span>
+</div>
+</div>
+</div>
+<!-- ==================== DAY 5 ==================== -->
+<div class="day-card theme-yellow">
+<div class="day-dot">🥐</div>
+<div class="day-header">
+<div class="day-date-area">
+<div class="day-number">
+<div class="num">30</div>
+<div class="label">MAR / 月</div>
+</div>
+<div class="day-title-area">
+<h3>🥐 ストラスブールへ移動・観光開始</h3>
+<div class="day-sub">Day 5 — Ulm → Kehl → Strasbourg 🚋</div>
+</div>
+</div>
+<div class="location-badge">📍 Ulm → Strasbourg 🇫🇷</div>
+</div>
+<div class="day-body">
+<div class="photo-strip">
+<div class="photo-item">
+<img alt="ノートルダム大聖堂" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=WJKinXITTVq6%2B1Uzb%2BHw7u3ELkzA1Bua4bCnpRmOBb%2BkeGxR8bZvm2cg%2Bqtv%2BG5HPuWdJmjuq60KORCY%2FYWOEyDA%2BAHaM12vpFpJ8AoNj5W7z4o4LwQS9O%2FzHM9aePM9i95AveBKpxe1q15Ct8bRo5shcwhrE7wmYbatjsfRxYBpmw%3D%3D&amp;u2=TI0AK4CEk9xeKcSP&amp;width=2560"/>
+<div class="photo-caption">ノートルダム大聖堂</div>
+</div>
+<div class="photo-item">
+<img alt="プティット・フランス運河" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=vG%2FrAJAIcEJ2W3VdCpjpj21nvvQiDvOADnAZf0eUe4MvO8YOrY7PoMBIdyACCPhOOkN2KIZdukDvuoxODcaZv8YWUF5ma6cs9L6YxSGHOyhzjoSL&amp;u2=QRjadyuYYmoRkqxj&amp;width=2560"/>
+<div class="photo-caption">プティット・フランス運河</div>
+</div>
+<div class="photo-item">
+<img alt="プティット・フランス 夕暮れ" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=fdcqJmSYBqCSld4eDmueF2fvPwkFB%2Bf4OCpWLWJ6jMWMt7vLqZKnsY0Uxuxh%2BKGsNqRuPsqK7OAKKiPU8sBUSbN9hcDnucCWk%2Bdn%2BNVt4WTO4Kb6aIPetGkng1W2C7b%2Fry4eyiuL%2Bhw%3D&amp;u2=OcAqJh6lNcdVPY2l&amp;width=2560"/>
+<div class="photo-caption">プティット・フランス 夕暮れ</div>
+</div>
+</div>
+<ul class="activity-list">
+<li class="activity-item">
+<div class="activity-icon">🚆</div>
+<div class="activity-content">
+<div class="activity-time">午前</div>
+<div class="activity-name">ウルム → ケール（Kehl）へ移動</div>
+<div class="activity-desc">ウルム→ケール 電車で約1.5〜2時間（乗り換えあり）。ケールはライン川を挟んでフランス・ストラスブールの対岸にあるドイツの街です🇩🇪</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🚋</div>
+<div class="activity-content">
+<div class="activity-name">ケール駅からトラムに乗り換え <span class="highlight-badge">国境越え！</span></div>
+<div class="activity-desc">ケール駅でストラスブールのトラム（路面電車）<strong>D線</strong>に乗り換え。ライン川の橋を渡り、そのままストラスブール中央駅（Gare Centrale）へ直通！約15〜20分で到着。国境をトラムで越える特別な体験🌉<br/><strong>📍 Kehl Bahnhof → Strasbourg Gare Centrale</strong></div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">⛪</div>
+<div class="activity-content">
+<div class="activity-time">午後</div>
+<div class="activity-name">ストラスブール大聖堂（Cathédrale Notre-Dame）</div>
+<div class="activity-desc">ピンク砂岩が美しいゴシック建築の傑作。天文時計も必見！高さ142mの尖塔が街のシンボル。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🌸</div>
+<div class="activity-content">
+<div class="activity-name">プティット・フランス地区 散策</div>
+<div class="activity-desc">ストラスブールで最もフォトジェニックなエリア！川沿いの木組みの家が絵本のような世界を演出。夕暮れ時が特に美しい🌅</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🍷</div>
+<div class="activity-content">
+<div class="activity-name">アルザス料理ディナー<span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">タルトフランベ（アルザス風ピザ）とアルザスワインを試して♪ドイツとフランスが融合した独自の食文化を楽しみましょう。</div>
+</div>
+</li>
+</ul>
+<div class="tip-box tip-yellow">
+<span class="tip-icon">🚋</span>
+<span>ケール駅のトラムは<strong>ストラスブール交通局（CTS）のD線</strong>。ケール駅とストラスブール中央駅はドイツ・フランス共通のチケット（ユーロゼーンチケット）で乗車可能。ライン川の橋からの景色も素晴らしい✨ トラムは数分おきに運行しているので時刻表を事前に確認しておきましょう。</span>
+</div>
+<div class="hotel-tag">
+          🏨 宿泊 <strong>Citadines Kleber Strasbourg</strong>
+<span style="font-size:0.72rem;color:var(--text-mid);margin-left:4px;">— クレベール広場そばのアパートホテル</span>
+</div>
+</div>
+</div>
+<!-- ==================== DAY 6 ==================== -->
+<div class="day-card theme-peach">
+<div class="day-dot">🌷</div>
+<div class="day-header">
+<div class="day-date-area">
+<div class="day-number">
+<div class="num">31</div>
+<div class="label">MAR / 火</div>
+</div>
+<div class="day-title-area">
+<h3>🌷 ストラスブール 丸一日観光</h3>
+<div class="day-sub">Day 6 — Strasbourg Full Day</div>
+</div>
+</div>
+<div class="location-badge">📍 Strasbourg 🇫🇷</div>
+</div>
+<div class="day-body">
+<ul class="activity-list">
+<li class="activity-item">
+<div class="activity-icon">🇪🇺</div>
+<div class="activity-content">
+<div class="activity-name">ヨーロッパ議会・ヨーロッパ宮<span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">EUの心臓部！建物の外観見学やビジターセンターへ（要予約の場合あり）。ストラスブールはEUの首都とも呼ばれます。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🏠</div>
+<div class="activity-content">
+<div class="activity-name">カメルツェル館（Maison Kammerzell）<span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">大聖堂前に建つ16世紀の彫刻装飾が施された建物。現在はレストランとして営業中。ランチもおすすめ。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🛒</div>
+<div class="activity-content">
+<div class="activity-name">グランド・ルー（Grand'Rue）ショッピング<span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">アルザスのお土産（クグロフ型・フォアグラ・ゲヴュルツトラミネール）を探して！可愛い雑貨屋も多数。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🌉</div>
+<div class="activity-content">
+<div class="activity-name">ポン・ヴォーバン（屋根付き橋）<span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">17世紀のヴォーバン式堰堤。橋の上から旧市街が一望できるパノラマスポット。日没後のライトアップも美しい✨</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🚢</div>
+<div class="activity-content">
+<div class="activity-name">イル川クルーズ（任意）<span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">ストラスブールの旧市街を川から眺めるボートツアー。所要約1時間。料金：約€15〜。</div>
+</div>
+</li>
+</ul>
+<div class="tip-box tip-peach">
+<span class="tip-icon">🌸</span>
+<span>ストラスブールはフランス語とドイツ語が混在するアルザス地方の首都。ショッピングはクレベール広場周辺が充実しています。「ストラスブール・シティパス」を使うと主要観光施設・交通が割引に！</span>
+</div>
+<div class="hotel-tag">
+          🏨 宿泊 <strong>Citadines Kleber Strasbourg</strong>
+</div>
+</div>
+</div>
+<!-- ==================== DAY 7 ==================== -->
+<div class="day-card theme-mint">
+<div class="day-dot">🌊</div>
+<div class="day-header">
+<div class="day-date-area">
+<div class="day-number">
+<div class="num">1</div>
+<div class="label">APR / 水</div>
+</div>
+<div class="day-title-area">
+<h3>🌊 ライン川沿いを北上、古城ホテルへ</h3>
+<div class="day-sub">Day 7 — Strasbourg → 途中寄り道 → Oberwesel（Rhein）</div>
+</div>
+</div>
+<div class="location-badge">📍 Strasbourg 🇫🇷 → Rhein 🇩🇪</div>
+</div>
+<div class="day-body">
+<div class="photo-strip">
+<div class="photo-item">
+<img alt="シェーンブルク城＆オーバーヴェーゼル" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=kmmwrp1b67kqdOkDXV2OUaicJmmGgEjpoTHFE7buz4%2FFchGgpAi0aURhWSXxGQT5zTVdEOkevJ1m6vOMUYoFQEo0U5pz1SSZnLZ0SRwbpwMf%2FrGzJCr64DvHRRoIn3XHASrVn3zrkOxYHzaWDDrQ5T2X&amp;u2=Fr0rEA08e7nh0GNc&amp;width=2560"/>
+<div class="photo-caption">シェーンブルク城＆オーバーヴェーゼル</div>
+</div>
+<div class="photo-item">
+<img alt="ラインシュタイン城" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=kVQmRFxms0fbTTbyi2nG%2FW1cp5%2FTpcLIiJFIHPbu9U4DCHCObqFB0UU%2F3aIzfg5OyZPYsv068VLfu%2FD4%2Fc7FFhOf6ToaN4YCyCj%2F0vDXCjseUslAcin5yB0PGKaA8Acet1BvpNLFvtIHZxQYJUeu&amp;u2=I4pmhx6jw9tCmm%2BT&amp;width=2560"/>
+<div class="photo-caption">ラインシュタイン城</div>
+</div>
+<div class="photo-item">
+<img alt="ライン渓谷の古城" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=60MYygf176IcP%2BFYOzFu%2BEqKgezpYf1%2FcKRNDe69g4esWefSpRiSOhAO2itzsBltM379CC8zBMldnwXGvumAn3o58HjzJsagKopThyPA&amp;u2=tRsDlosWVPHzf3rE&amp;width=2560"/>
+<div class="photo-caption">ライン渓谷の古城</div>
+</div>
+<div class="photo-item">
+<img alt="シェーンブルク城（宿泊先）" loading="lazy" onerror="this.parentElement.style.display='none'" src="https://sspark.genspark.ai/cfimages?u1=6wNYYghz13bamSo4wrv7gBS%2BON8KbhEw2WjeDTLqVTlL%2FbSC9h2PmauV6j9DayS1jzRglC%2BpElaR8EHR18c929IHyfF0wjq9x0heS1nbUg%3D%3D&amp;u2=cd2SLbSb0cwyfmPB&amp;width=2560"/>
+<div class="photo-caption">シェーンブルク城（宿泊先）</div>
+</div>
+</div>
+<ul class="activity-list">
+<!-- 移動 -->
+<li class="activity-item">
+<div class="activity-icon">🚆</div>
+<div class="activity-content">
+<div class="activity-time">午前中</div>
+<div class="activity-name">ストラスブール発 → ライン川沿いへ北上</div>
+<div class="activity-desc">ストラスブールから電車でドイツへ再入国🌉 途中どこに寄るかはまだ自由！マインツやマンハイム、ビンゲン・アム・ラインなど、ライン川沿いの街々を経由しながら最終目的地のオーバーヴェーゼルへ向かいます。</div>
+</div>
+</li>
+<hr class="section-divider"/>
+<!-- 寄り道候補ここから -->
+<li class="activity-item">
+<div class="activity-icon">🏛️</div>
+<div class="activity-content">
+<div class="activity-name">マインツ（Mainz）に寄り道 <span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">ライン川とマイン川の合流点に位置する歴史都市。グーテンベルク博物館、マインツ大聖堂（Dom）、旧市街散策など볼거리が豊富。ストラスブールから約1.5時間でアクセス可能。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🎨</div>
+<div class="activity-content">
+<div class="activity-name">マンハイム（Mannheim）に寄り道 <span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">ライン川とネッカー川の合流する港湾都市。バロック様式のマンハイム宮殿や、街の碁盤目状の区割り（ブロック番号で区を呼ぶユニークな都市構造）が特徴。ストラスブールから約45分とアクセス抜群。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🏰</div>
+<div class="activity-content">
+<div class="activity-name">ビンゲン・アム・ライン（Bingen am Rhein）に寄り道 <span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">ライン渓谷の玄関口。ライン川の小島に建つ白い「マウスの塔（Mäuseturm）」がシンボル。聖ヒルデガルト修道院やワイン醸造所めぐりも楽しめます。オーバーヴェーゼルまで約15km🌊</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">⛴️</div>
+<div class="activity-content">
+<div class="activity-name">ライン川クルーズ <span class="undecided-badge">検討中</span></div>
+<div class="activity-desc">ビンゲン〜ザンクト・ゴアール間は「ロマンチックライン」の最もドラマチックな区間！岸沿いに古城が次々と現れる絶景ルート🏯 片道約2時間。KD Line等が運航。ローレライの岩も通過！</div>
+</div>
+</li>
+<!-- 寄り道候補ここまで -->
+<hr class="section-divider"/>
+<!-- 目的地 -->
+<li class="activity-item">
+<div class="activity-icon">🏯</div>
+<div class="activity-content">
+<div class="activity-time">夕方〜夜</div>
+<div class="activity-name">オーバーヴェーゼル（Oberwesel）着・古城ホテルへ</div>
+<div class="activity-desc">ユネスコ世界遺産「ライン渓谷中流上部」の中心地。ラインシュタイン城、ゾーネック城など沿岸の古城を眺めながらシェーンブルク城へチェックイン🌟 ライン川の夕景は格別！</div>
+</div>
+</li>
+</ul>
+<div class="tip-box tip-mint">
+<span class="tip-icon">💡</span>
+<span>寄り道の自由度が高い1日！<strong>マインツ・マンハイム・ビンゲン</strong>のどこに立ち寄るかは当日の気分や時間次第でOK🎉 乗り降り自由なDB（ドイツ鉄道）で気軽にプランを組み替えられます。ライン川クルーズを楽しむなら<strong>ビンゲンを午前着</strong>にするのがおすすめ。</span>
+</div>
+<div class="hotel-tag">
+          🏨 宿泊 <strong>Burghotel auf Schönburg</strong>
+<span style="font-size:0.72rem;color:var(--text-mid);margin-left:4px;">— 1000年の歴史を誇るオーバーヴェーゼルの古城ホテル！🏰 ライン川絶景</span>
+</div>
+</div>
+</div>
+<!-- ==================== DAY 8 ==================== -->
+<div class="day-card theme-lavender">
+<div class="day-dot">✈️</div>
+<div class="day-header">
+<div class="day-date-area">
+<div class="day-number">
+<div class="num">2</div>
+<div class="label">APR / 木</div>
+</div>
+<div class="day-title-area">
+<h3>✈️ フランクフルト空港 → 帰路へ</h3>
+<div class="day-sub">Day 8 — Bingen → Frankfurt Airport</div>
+</div>
+</div>
+<div class="location-badge">📍 Bingen → Frankfurt ✈️</div>
+</div>
+<div class="day-body">
+<ul class="activity-list">
+<li class="activity-item">
+<div class="activity-icon">🌅</div>
+<div class="activity-content">
+<div class="activity-name">古城ホテルの朝食・チェックアウト</div>
+<div class="activity-desc">シェーンブルク城からのライン川を見渡す絶景の朝食。1000年の歴史を感じる夢のような城でのひと晩、名残惜しいですが…</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🚆</div>
+<div class="activity-content">
+<div class="activity-time">昼過ぎ</div>
+<div class="activity-name">フランクフルト空港へ移動</div>
+<div class="activity-desc">ビンゲン→フランクフルト空港 電車で約1〜1.5時間。余裕をもって出発を。免税手続き（TAX REFUND）がある方はカウンターが混雑するので早めに！</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🛍️</div>
+<div class="activity-content">
+<div class="activity-name">空港でお土産・お買い物</div>
+<div class="activity-desc">フランクフルト空港は免税ショップが充実♪最後のお土産タイム🎁</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">✈️</div>
+<div class="activity-content">
+<div class="activity-time">19:40</div>
+<div class="activity-name">OZ542 フランクフルト発 → 仁川行き</div>
+<div class="activity-desc">アシアナ航空。仁川到着 翌4月3日 14:35。</div>
+</div>
+</li>
+</ul>
+<div class="tip-box tip-lavender">
+<span class="tip-icon">⏰</span>
+<span>国際線は<strong>出発3時間前</strong>に空港到着が安心。EU内での免税（TAX FREE）購入品がある場合は空港の税関で<strong>スタンプをもらう手続きが必要</strong>です。チェックイン前に必ず！</span>
+</div>
+</div>
+</div>
+<!-- ==================== RETURN DAY ==================== -->
+<div class="day-card theme-pink" style="border: 2px dashed var(--pink-mid);">
+<div class="day-dot">🏠</div>
+<div class="day-header">
+<div class="day-date-area">
+<div class="day-number">
+<div class="num">3</div>
+<div class="label">APR / 金</div>
+</div>
+<div class="day-title-area">
+<h3>🏠 帰国日 おかえりなさい！</h3>
+<div class="day-sub">Return Day — Seoul → Tokyo</div>
+</div>
+</div>
+<div class="location-badge">📍 仁川 → 金浦 → 羽田</div>
+</div>
+<div class="day-body">
+<ul class="activity-list">
+<li class="activity-item">
+<div class="activity-icon">🛬</div>
+<div class="activity-content">
+<div class="activity-time">14:35</div>
+<div class="activity-name">仁川空港 到着</div>
+<div class="activity-desc">乗り継ぎのため仁川→金浦へ移動（空港間シャトルバス約1時間程度）。</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">✈️</div>
+<div class="activity-content">
+<div class="activity-time">19:50</div>
+<div class="activity-name">OZ1065 金浦発 → 羽田行き</div>
+<div class="activity-desc">アシアナ航空。羽田到着 22:00。お疲れ様でした！</div>
+</div>
+</li>
+<li class="activity-item">
+<div class="activity-icon">🏠</div>
+<div class="activity-content">
+<div class="activity-time">22:00</div>
+<div class="activity-name">✨ 羽田空港 到着 おかえりなさい！ ✨</div>
+<div class="activity-desc">素敵な思い出をたくさん持って、無事帰国！お土産の配布もお忘れなく🎁</div>
+</div>
+</li>
+</ul>
+<div class="tip-box tip-pink">
+<span class="tip-icon">⚠️</span>
+<span>仁川→金浦の乗り継ぎ時間は<strong>5時間15分</strong>あります。空港間移動は公式シャトルバス「AREX」か地下鉄・タクシーを利用。仁川空港で韓国のお土産購入タイムにもなりますね♪</span>
+</div>
+</div>
+</div>
+</div><!-- end timeline -->
+<!-- ===== MEMO ===== -->
+<div class="section-title" style="margin-top:50px;">
+<div class="icon" style="background:var(--yellow);">📝</div>
+<h2>持ち物チェック <small>Packing Checklist</small></h2>
+</div>
+<div class="checklist-section" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+<div style="background:#fff;border-radius:20px;padding:18px;box-shadow:var(--shadow);">
+<div style="font-weight:900;color:var(--text-dark);margin-bottom:12px;font-size:1rem;">📄 重要書類</div>
+<ul style="list-style:none;font-size:0.82rem;line-height:2;color:var(--text-mid);font-weight:600;">
+<li>☐ パスポート（有効期限確認）</li>
+<li>☐ 各ホテルの予約確認書</li>
+<li>☐ フライトeチケット</li>
+<li>☐ クレジットカード（VISA/Master推奨）</li>
+<li>☐ 現金（ユーロ）</li>
+</ul>
+</div>
+<div style="background:#fff;border-radius:20px;padding:18px;box-shadow:var(--shadow);">
+<div style="font-weight:900;color:var(--text-dark);margin-bottom:12px;font-size:1rem;">🎒 旅のグッズ</div>
+<ul style="list-style:none;font-size:0.82rem;line-height:2;color:var(--text-mid);font-weight:600;">
+<li>☐ 歩きやすいスニーカー</li>
+<li>☐ 防寒着（4月のヨーロッパは肌寒い）</li>
+<li>☐ 折り畳み傘</li>
+<li>☐ モバイルバッテリー</li>
+<li>☐ 変換プラグ（欧州タイプC）</li>
+</ul>
+</div>
+</div>
+<!-- ===== FOOTER ===== -->
+<div class="footer" style="margin-top:30px;">
+<div style="font-size:2rem;margin-bottom:8px;">
+<span class="footer-emoji">🌸</span>
+<span class="footer-emoji">✈️</span>
+<span class="footer-emoji">🏰</span>
+<span class="footer-emoji">🧸</span>
+<span class="footer-emoji">🌷</span>
+<span class="footer-emoji">🍷</span>
+<span class="footer-emoji">⭐</span>
+</div>
+<p style="font-size:1rem;font-weight:900;color:var(--text-dark);margin-bottom:4px;">Bon Voyage! 素敵な旅になりますように✨</p>
+<p style="font-size:0.8rem;">Europe Trip 2026 · March 25 – April 3</p>
+<p style="font-size:0.75rem;margin-top:6px;opacity:0.7;">🇩🇪 Füssen · München · Ulm · Bingen  ／  🇫🇷 Strasbourg</p>
+</div>
+</div><!-- end container -->
+</body>
+</html>
